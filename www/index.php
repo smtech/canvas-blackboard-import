@@ -37,17 +37,17 @@ require_once(__DIR__ . '/.ignore.blackboard-import-authentication.inc.php');
 require_once(__DIR__ . '/config.inc.php');
 
 /* handles HTML page generation */
-require_once(APP_PATH . '/include/page-generator.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/page-generator.inc.php');
 
 /* handles working directory functions */
-require_once(APP_PATH . '/include/working-directory.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/working-directory.inc.php');
 
 /* handles the core of the Canvas API interactions */
-require_once(APP_PATH . '/include/canvas-api.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/canvas-api.inc.php');
 // TODO y'know, it occurs to me that with the CanvasApiProcess object, some of the uploading and API calls could be done asynchronously and buy us _much_ greater speed on the overall migration. Hmm...
 
 /* we do directly work with Pest on some AWS API calls */
-require_once(APP_PATH . '/include/Pest.php');
+require_once(SMCANVASLIB_PATH . '/include/pest/Pest.php');
 
 
 /***********************************************************************

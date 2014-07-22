@@ -1,13 +1,13 @@
 <?php
 
-require_once(__DIR__ . '/../config.inc.php');
+require_once(__DIR__ . '/smcanvaslib/config.inc.php');
 
 define('TOOL_NAME', 'Blackboard 8 &rarr; Canvas Import Tool'); // what the tool calls itself
 
 define('UPLOAD_DIR', '/var/www-data/canvas/blackboard-import'); // where we'll store uploaded files
 define('WORKING_DIR', UPLOAD_DIR . '/tmp'); // where we'll be dumping temp files (and cleaning up, too!)
 
-require_once(APP_PATH . '/include/working-directory.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/working-directory.inc.php');
 
 define('UPLOAD_STAGING_DIR', buildPath(__DIR__, 'upload-staging')); // directory of the publicly accessible directory files will be staged in to transfer to Canvas
 define('UPLOAD_STAGING_URL', 'http://' . buildPath(APP_URL, 'upload-staging') . '/'); // URL to the upload staging directory from the web
