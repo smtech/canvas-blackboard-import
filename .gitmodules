@@ -1,0 +1,3 @@
+[submodule "www/smcanvaslib"]
+	path = www/smcanvaslib
+	url = git@github.com:smtech/smcanvaslib.git
