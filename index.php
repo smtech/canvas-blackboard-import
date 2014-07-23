@@ -28,7 +28,7 @@
 /* REQUIRES the PHP 5 XSL extension
    http://www.php.net/manual/en/xsl.installation.php */
 
-require_once(__DIR__ . '/../config.inc.php');
+require_once(__DIR__ . '/smcanvaslib/config.inc.php');
 
 /* what Canvas API user are we going to connect as? */
 require_once(__DIR__ . '/.ignore.blackboard-import-authentication.inc.php');
